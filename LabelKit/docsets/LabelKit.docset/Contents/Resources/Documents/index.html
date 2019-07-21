@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>LabelKit  Reference</title>
+    <link rel="stylesheet" type="text/css" href="css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="js/jquery.min.js" defer></script>
+    <script src="js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a title="LabelKit  Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="index.html">LabelKit 1.0.2 Docs</a> (36% documented)</p>
+        <p class="header-right"><a href="https://github.com/edudnyk/LabelKit/"><img src="img/gh.png"/>View on GitHub</a></p>
+        <p class="header-right"><a href="dash-feed://https%3A%2F%2Fedudnyk%2Egithub%2Eio%2FLabelKit%2Fdocsets%2FLabelKit%2Exml"><img src="img/dash.png"/>Install in Dash</a></p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="index.html">LabelKit Reference</a>
+        <img id="carat" src="img/carat.png" />
+        LabelKit  Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Classes/LKLabel.html">LKLabel</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/LKLabelLayer.html">LKLabelLayer</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            
+            <h1 id='img-src-https-media-githubusercontent-com-media-edudnyk-labelkit-master-labelkit-gif-alt-labelkit' class='heading'><img src="https://media.githubusercontent.com/media/edudnyk/LabelKit/master/LabelKit.gif" alt="LabelKit"></h1>
+
+<p><a href="https://travis-ci.org/edudnyk/LabelKit"><img src="https://travis-ci.org/edudnyk/LabelKit.svg" alt="build status"></a>
+<a href="https://cocoapods.org/pods/LabelKit"><img src="https://img.shields.io/badge/cocoapods-compatible-brightgreen.svg" alt="cocoapods compatible"></a>
+<a href="https://github.com/Carthage/Carthage"><img src="https://img.shields.io/badge/carthage-compatible-brightgreen.svg" alt="carthage compatible"></a>
+<a href="https://swift.org"><img src="https://img.shields.io/badge/spm-compatible-brightgreen.svg" alt="language"></a>
+<a href="https://github.com/edudnyk/LabelKit/releases"><img src="https://img.shields.io/badge/swift-5.0-orange.svg" alt="swift"></a></p>
+
+<p>A <code>UILabel</code> that does true animation of attributed text.</p>
+
+<p>It animates all text attributes that are possible to animate, unlike  <code>CATextLayer</code> that animates only font and color.</p>
+
+<p>It also has a great support of multiline text animations while keeping almost all the benefits of being <code>UILabel</code>.</p>
+
+<p>It uses CoreText text rendering instead of CoreGraphics text rendering of <code>CATextLayer</code>. That makes the text to look the same by advancement and line height as the text in regular <code>UILabel</code>. </p>
+
+<p>It is a great and simple building block for UI which implements material design.</p>
+<h2 id='features' class='heading'>Features</h2>
+
+<ul>
+<li>[x] <a href="https://edudnyk.github.io/LabelKit/index.html">Documentation</a></li>
+<li>[x] Unit Test Coverage</li>
+</ul>
+<h2 id='requirements' class='heading'>Requirements</h2>
+
+<p><img src="https://img.shields.io/badge/xcode-11%2b-lightgrey.svg" alt="xcode">
+<img src="https://img.shields.io/badge/ios-9.0%2b-lightgrey.svg" alt="ios">
+<img src="https://img.shields.io/badge/tvos-9.0%2b-lightgrey.svg" alt="tvos">
+<img src="https://img.shields.io/badge/mac%20os-10.15%2b-lightgrey.svg" alt="mac os"></p>
+
+<p>Installation &gt;&gt; <a href="https://github.com/edudnyk/LabelKit/blob/master/INSTALL.md"><code>instructions</code></a> &lt;&lt;</p>
+<h2 id='usage' class='heading'>Usage</h2>
+
+<p>You can use either <code><a href="Classes/LKLabel.html">LKLabel</a></code> or <code><a href="Classes/LKLabelLayer.html">LKLabelLayer</a></code>, both support implicitly animatable text change. 
+When the layer is hosted by <code><a href="Classes/LKLabel.html">LKLabel</a></code>, animations of text during bounds change are more stable.</p>
+
+<p>Animating text change in <code><a href="Classes/LKLabel.html">LKLabel</a></code> can be something like this:</p>
+<pre class="highlight swift"><code><span class="c1">// Swift</span>
+<span class="k">self</span><span class="o">.</span><span class="n">label</span><span class="o">.</span><span class="n">superview</span><span class="o">.</span><span class="nf">setNeedsLayout</span><span class="p">()</span>
+<span class="k">self</span><span class="o">.</span><span class="n">label</span><span class="o">.</span><span class="nf">setNeedsLayout</span><span class="p">()</span>
+<span class="kt">UIView</span><span class="o">.</span><span class="nf">animate</span><span class="p">(</span><span class="nv">withDuration</span><span class="p">:</span> <span class="mi">3</span><span class="p">,</span> <span class="nv">delay</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span> <span class="nv">options</span><span class="p">:</span> <span class="p">[],</span> <span class="nv">animations</span><span class="p">:</span> <span class="p">{</span>
+    <span class="k">self</span><span class="o">.</span><span class="n">label</span><span class="o">.</span><span class="n">attributedText</span> <span class="o">=</span> <span class="n">attributedText</span>
+    <span class="k">self</span><span class="o">.</span><span class="n">label</span><span class="o">.</span><span class="n">superview</span><span class="o">.</span><span class="nf">layoutIfNeeded</span><span class="p">()</span>
+<span class="p">},</span> <span class="nv">completion</span><span class="p">:</span> <span class="kc">nil</span><span class="p">)</span>
+</code></pre>
+<pre class="highlight plaintext"><code>// Objective-C
+[self.label.superview setNeedsLayout];
+[self.label setNeedsLayout];
+[UIView animateWithDuration:3 delay:0 options:kNilOptions animations:^{
+    self.label.attributedText = attributedText;
+    [self.label.superview layoutIfNeeded];
+} completion:nil];
+</code></pre>
+
+<p>Animating text change in <code><a href="Classes/LKLabelLayer.html">LKLabelLayer</a></code> can be something like this:</p>
+<pre class="highlight swift"><code><span class="c1">// Swift</span>
+<span class="kt">CATransaction</span><span class="o">.</span><span class="nf">begin</span><span class="p">()</span>
+<span class="kt">CATransaction</span><span class="o">.</span><span class="nf">setAnimationDuration</span><span class="p">(</span><span class="mf">3.0</span><span class="p">)</span>
+<span class="n">labelLayer</span><span class="o">.</span><span class="n">attributedText</span> <span class="o">=</span> <span class="n">attributedText</span>
+<span class="kt">CATransaction</span><span class="o">.</span><span class="nf">commit</span><span class="p">()</span>
+</code></pre>
+<pre class="highlight plaintext"><code>// Objective-C
+[CATransaction begin];
+[CATransaction setAnimationDuration:3.0];
+labelLayer.attributedText = attributedText;
+[CATransaction commit];
+</code></pre>
+
+<blockquote>
+<p>Refer to the <a href="https://edudnyk.github.io/LabelKit/index.html"><code>documentation</code></a> for the detailed description of possibilities.</p>
+</blockquote>
+<h2 id='license' class='heading'>License</h2>
+
+<p>LabelKit is released under the Simplified BSD license. See <a href="https://github.com/edudnyk/LabelKit/blob/master/LICENSE">LICENSE</a> for details.</p>
+
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2019 <a class="link" href="https://github.com/edudnyk/" target="_blank" rel="external">Eugene</a>. All rights reserved. (Last updated: 2019-07-21)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.10.0</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>

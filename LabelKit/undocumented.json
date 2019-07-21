@@ -1,0 +1,103 @@
+{
+  "warnings": [
+    {
+      "file": "/Users/dudnyk/Projects/LabelKit/Sources/LabelKit/LKLabel.swift",
+      "line": 40,
+      "symbol": "LKLabel.layerClass",
+      "symbol_kind": "source.lang.swift.decl.var.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/dudnyk/Projects/LabelKit/Sources/LabelKit/LKLabel.swift",
+      "line": 52,
+      "symbol": "LKLabel.init(frame:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/dudnyk/Projects/LabelKit/Sources/LabelKit/LKLabel.swift",
+      "line": 57,
+      "symbol": "LKLabel.init(coder:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/dudnyk/Projects/LabelKit/Sources/LabelKit/LKLabel.swift",
+      "line": 96,
+      "symbol": "LKLabel.backgroundColor",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/dudnyk/Projects/LabelKit/Sources/LabelKit/LKLabelLayer.swift",
+      "line": 37,
+      "symbol": "LKLabelLayer",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/dudnyk/Projects/LabelKit/Sources/LabelKit/LKLabelLayer.swift",
+      "line": 46,
+      "symbol": "LKLabelLayer.init()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/dudnyk/Projects/LabelKit/Sources/LabelKit/LKLabelLayer.swift",
+      "line": 51,
+      "symbol": "LKLabelLayer.init(coder:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/dudnyk/Projects/LabelKit/Sources/LabelKit/LKLabelLayer.swift",
+      "line": 87,
+      "symbol": "LKLabelLayer.preferredFrameSize()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/dudnyk/Projects/LabelKit/Sources/LabelKit/LKLabelLayer.swift",
+      "line": 92,
+      "symbol": "LKLabelLayer.draw(in:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/dudnyk/Projects/LabelKit/Sources/LabelKit/LKLabelLayer.swift",
+      "line": 138,
+      "symbol": "LKLabelLayer.needsDisplay(forKey:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/dudnyk/Projects/LabelKit/Sources/LabelKit/LKLabelLayer.swift",
+      "line": 149,
+      "symbol": "LKLabel.drawText(in:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/dudnyk/Projects/LabelKit/Sources/LabelKit/LKLabelLayer.swift",
+      "line": 154,
+      "symbol": "LKLabel.minimumScaleFactor",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/dudnyk/Projects/LabelKit/Sources/LabelKit/LKLabelLayer.swift",
+      "line": 160,
+      "symbol": "LKLabel.adjustsFontSizeToFitWidth",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/dudnyk/Projects/LabelKit/Sources/LabelKit/LKLabelLayer.swift",
+      "line": 167,
+      "symbol": "LKLabel.lineBreakMode",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    }
+  ],
+  "source_directory": "/Users/dudnyk/Projects/LabelKit"
+}
