@@ -29,6 +29,13 @@
       "warning": "undocumented"
     },
     {
+      "file": "/Users/dudnyk/Projects/LabelKit/Sources/LabelKit/LKLabel.swift",
+      "line": 128,
+      "symbol": "LKLabel.intrinsicContentSize",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
       "file": "/Users/dudnyk/Projects/LabelKit/Sources/LabelKit/LKLabelLayer.swift",
       "line": 37,
       "symbol": "LKLabelLayer",
